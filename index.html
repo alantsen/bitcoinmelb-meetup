@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Bitcoin Melbourne - Welcome</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-markdown
+				section data-background-image="https://f001.backblazeb2.com/file/deck-images/CoverimageFinTech.png">
+					#Bitcoin Melbourne
+					###_August Meetup_
+					####An Introduction To Bitcoin, Blockchain And Smart Contracts 
+				</section>
+
+				<section data-markdown>
+		          ##Agenda For Tonight
+		          1. **6pm - 6.30pm** - Martin Davidson (MBTC, Bitcoin Group): *Bitcoin Basics*
+		          2. **6.30pm - 7pm** - Scott Phillips (BlockZero Co-Founder): *An Introduction To Ethereum and Smart Contracts*
+		          3. **7pm - 7.15pm** - Alan Tsen (TWiB, Block+Labs) *Blockchain Tech: Where Are Things At?*
+		          4. **7.15pm - 7.45pm** - *Q&A Panel with Brave New Coin, Blockfreight, Bitcoin Group, DSX and BlockZero*
+		          5. **7.45pm - 9pm** - *Drinks And Networking*
+				</section>
+
+				<section data-markdown>
+					##TWEET freely and liberally
+					*We're using the hashtag #bitcoinMelb* 📱👈😀
+				</section>
+
+				<section>
+					<h2>Thank You 🙏</h2>
+					<H4>Sponsors For Tonight</H4>
+					<img src="https://f001.backblazeb2.com/file/BitcoinMelb/Amazon.png" style="width:300px;height:125px;">
+          <img src="https://f001.backblazeb2.com/file/BitcoinMelb/MBTC_Logo.png" style="width:300px;height:125px;">
+          <img src="https://f001.backblazeb2.com/file/BitcoinMelb/Bitcoin_Group.png" style="width:300px;height:125px;">
+				</section>
+				
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			var items = [
+			{
+				selector : "#chart-frame-0",
+				type : "doughnut",
+				data : [
+					{
+						value: 300,
+						color:"#F7464A",
+						highlight: "#FF5A5E",
+						label: "Red"
+					},
+					{
+						value: 50,
+						color: "#46BFBD",
+						highlight: "#5AD3D1",
+						label: "Green"
+					},
+					{
+						value: 100,
+						color: "#FDB45C",
+						highlight: "#FFC870",
+						label: "Yellow"
+					}
+				],
+				options : {
+					responsive:true
+				}
+			},
+			{
+				selector : "#chart-frame-1",
+				type : "line",
+				data : {
+    			labels: ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7"],
+    			datasets: [
+        		{
+            	label: "Momentum",
+            	fillColor: "rgba(220,220,220,0.2)",
+            	strokeColor: "rgba(220,220,220,1)",
+            	pointColor: "rgba(220,220,220,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(220,220,220,1)",
+            	data: [65, 59, 80, 150, 30, 200, 90]
+        		},
+        
+    			]
+				},
+				options : {
+					responsive:true
+				}
+			},
+			{
+        selector : "#chart-frame-2",
+        type : "bar",
+        data : {
+          labels: ["2010", "2011", "2012", "2013", "2014", "2015"],
+          datasets: [
+            {
+              label: "My First dataset",
+              fillColor: "rgba(220,220,220,0.5)",
+              strokeColor: "rgba(220,220,220,0.8)",
+              highlightFill: "rgba(220,220,220,0.75)",
+              highlightStroke: "rgba(220,220,220,1)",
+              data: [0.19, 0.21, 0.3, 0.4, 12, 16]
+            },
+          ]
+        },
+				options : {
+					responsive : true
+				}
+      },
+			{
+				selector : "#chart-frame-3",
+        type : "radar",
+				data : {
+    			labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+    			datasets: [
+        		{
+            	label: "My First dataset",
+            	fillColor: "rgba(220,220,220,0.2)",
+            	strokeColor: "rgba(220,220,220,1)",
+            	pointColor: "rgba(220,220,220,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(220,220,220,1)",
+            	data: [65, 59, 90, 81, 56, 55, 40]
+        		},
+        		{
+            	label: "My Second dataset",
+            	fillColor: "rgba(151,187,205,0.2)",
+            	strokeColor: "rgba(151,187,205,1)",
+            	pointColor: "rgba(151,187,205,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(151,187,205,1)",
+            	data: [28, 48, 40, 19, 96, 27, 100]
+        		}
+    			]
+				},
+				options :{
+					responsive : true,
+					pointLabelFontSize : 15
+				}
+			},
+			{
+        selector : "#chart-frame-4",
+        type : "polararea",
+        data : [
+          {
+            value: 300,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Red"
+          },
+          {
+            value: 50,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+          },
+          {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Yellow"
+          },
+          {
+            value: 40,
+            color: "#949FB1",
+            highlight: "#A8B3C5",
+            label: "Grey"
+          },
+          {
+            value: 120,
+            color: "#4D5360",
+            highlight: "#616774",
+            label: "Dark Grey"
+          }
+        ],
+        options : {
+          responsive : true
+        }
+      },
+      {
+        selector : "#chart-frame-5",
+        type : "pie",
+        data : [
+          {
+            value: 95,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Working On Your Business"
+          },
+          {
+            value: 0,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+          },
+          {
+            value: 5,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Personal"
+          }
+        ],
+				options : {
+					responsive : true
+				}
+      },
+			{
+        selector : "#chart-frame-6",
+        type : "doughnut",
+        data : [
+          {
+            value: 300,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Red"
+          },
+          {
+            value: 50,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+          },
+          {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Yellow"
+          }
+        ],
+				options : {
+					responsive : true
+				}
+      }
+    ];
+			
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				
+				history: true,
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// Display the page number of the current slide
+				slideNumber: true,
+
+				// Enable keyboard shortcuts for navigation
+				keyboard: true,
+
+				// Enable the slide overview mode
+				overview: true,
+
+				// Vertical centering of slides
+				center: true,
+
+				// Transition style
+				transition: 'convex', // none/fade/slide/convex/concave/zoo
+
+				// Parallax background image
+				//parallaxBackgroundImage: 'https://f001.backblaze.com/file/deck-images/CoverimageFinTech.png',
+
+				// Parallax background size
+				//parallaxBackgroundSize: '2000px 900px', // CSS syntax, e.g. "2100px 900px"
+				
+				chart : {
+					items : items
+				},
+
+				menu: {
+    			// Specifies which side of the presentation the menu will 
+       			// be shown. Use 'left' or 'right'.
+        		side: 'left',
+
+       			// Add slide numbers to the titles in the slide list.
+        		// Use 'true' or format string (same as reveal.js slide numbers)
+        		numbers: true,
+
+        		// Specifies which slide elements will be used for generating
+        		// the slide titles in the menu. The default selects the first
+        		// heading element found in the slide, but you can specify any
+        		// valid css selector and the text from the first matching
+        		// element will be used.
+       			// Note: that a section data-menu-title attribute or an element
+        		// with a menu-title class will take precedence over this option
+        		titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+        		// Hide slides from the menu that do not have a title.
+        		// Set to 'true' to only list slides with titles.
+        		hideMissingTitles: false,
+
+        		// Add markers to the slide titles to indicate the 
+        		// progress through the presentation
+        		markers: true,
+
+        		// Specify custom panels to be included in the menu, by
+        		// providing an array of objects with 'title', 'icon'
+        		// properties, and either a 'src' or 'content' property.
+        		custom: false,
+        		//[ { title: 'About', icon: '<i class="fa fa-info">', content: '<p>This slidedeck is created with reveal.js</p>' },
+			    //    ],
+
+        		// Specifies the themes that will be available in the themes
+        		// menu panel. Set to 'false' to hide themes panel.
+        		themes: false, 
+
+        		//[
+          		//	{ name: 'Black', theme: 'css/theme/black.css' },
+            	//	{ name: 'White', theme: 'css/theme/white.css' },
+            	//	{ name: 'League', theme: 'css/theme/league.css' },
+            	//	{ name: 'Sky', theme: 'css/theme/sky.css' },
+            	//	{ name: 'Beige', theme: 'css/theme/beige.css' },
+            	//	{ name: 'Simple', theme: 'css/theme/simple.css' },
+            	//	{ name: 'Serif', theme: 'css/theme/serif.css' },
+            	//	{ name: 'Blood', theme: 'css/theme/blood.css' },
+            	//	{ name: 'Night', theme: 'css/theme/night.css' },
+            	//	{ name: 'Moon', theme: 'css/theme/moon.css' },
+            	//	{ name: 'Solarized', theme: 'css/theme/solarized.css' }
+        		//],
+
+        		// Specifies if the transitions menu panel will be shown.
+        		transitions: false,
+
+        		// Adds a menu button to the slides to open the menu panel.
+        		// Set to 'false' to hide the button.
+        		openButton: true,
+
+        		// If 'true' allows the slide number in the presentation to
+        		// open the menu panel. The reveal.js slideNumber option must 
+        		// be displayed for this to take effect
+        		openSlideNumber: true,
+
+       			// If true allows the user to open and navigate the menu using
+        		// the keyboard. Standard keyboard interaction with reveal
+        		// will be disabled while the menu is open.
+        		keyboard: true
+    			},
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/chartjs/Chart.min.js'},
+					{ src: 'plugin/chartjs/charted.js'}, // This is the plugin
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'bower_components/reveal.js-menu/menu.js' },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }	
+				]
+				  
+				});
+			
+		</script>
+
+		
+
+	</body>
+</html>
